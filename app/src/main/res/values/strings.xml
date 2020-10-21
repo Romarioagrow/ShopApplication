@@ -3,4 +3,5 @@
     <string name="tab_text_1">Товары</string>
     <string name="tab_text_2">Заказы</string>
     <string name="tab_text_3">Кабинет</string>
+    <string name="products_fragment">Products Fragment</string>
 </resources>
