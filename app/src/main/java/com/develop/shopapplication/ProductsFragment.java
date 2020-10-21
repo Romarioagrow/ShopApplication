@@ -1,22 +1,13 @@
 package com.develop.shopapplication;
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
-import android.widget.Toast;
-
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
-
-import com.develop.shopapplication.ui.main.PageViewModel;
 
 public class ProductsFragment extends Fragment {
-
-    //private GridView gridView;
     private GridView gridView;
 
     public ProductsFragment() {
@@ -25,20 +16,6 @@ public class ProductsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setCon(R.layout.activity_main);
-
-        //this.gridView = (GridView)findViewById(R.id.gridView);
-        //getView().getLa;
-
-        /*pageViewModel = ViewModelProviders.of(this).get(PageViewModel.class);
-        int index = 1;
-        if (getArguments() != null) {
-            index = getArguments().getInt(ARG_SECTION_NUMBER);
-        }
-        pageViewModel.setIndex(index);*/
-
-
-
     }
 
     @Override
@@ -46,20 +23,19 @@ public class ProductsFragment extends Fragment {
                              ViewGroup container,
                              Bundle savedInstanceState
     ) {
-        //this.gridView = getView().findViewById(R.id.gridView);
-        //this.gridView = getView().findViewById(R.id.gridView);
-        //this.gridView = container.getRootView().findViewById(R.id.gridView);
-
-        ProductDto productDto1 = new ProductDto(1, "Apple iPhone 7", "Mobile_phone", 30000);
+        /*ProductDto productDto1 = new ProductDto(1, "Apple iPhone 7", "Mobile_phone", 30000);
         ProductDto productDto2 = new ProductDto(1, "Apple iPhone 8", "Mobile_phone", 40000);
         ProductDto productDto3 = new ProductDto(1, "Apple iPhone XR", "Mobile_phone", 50000);
         ProductDto productDto4 = new ProductDto(1, "Apple iPhone 12", "Mobile_phone", 90000);
-        ProductDto[] productDtos = new ProductDto[]{productDto1, productDto2, productDto3, productDto4};
+        ProductDto[] productDtos = new ProductDto[]{productDto1, productDto2, productDto3, productDto4};*/
 
         View view = inflater.inflate(R.layout.fragment_products, container, false);
 
-        GridView gridViewYes = (GridView) view.findViewById(R.id.gridView);
-        gridViewYes.setAdapter(new ArrayAdapter<ProductDto>(view.getContext(), android.R.layout.simple_list_item_1 , productDtos));
+        GridView gridViewProducts = (GridView) view.findViewById(R.id.gridView);
+        //gridViewProducts.setAdapter(new ArrayAdapter<ProductDto>(view.getContext(), android.R.layout.simple_list_item_1 , productDtos));
+        gridViewProducts.setAdapter(new ProductsAdapter(container.getContext()));
+
+
 
 
         /*
