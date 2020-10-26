@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -46,7 +47,7 @@ public class ProductsAdapter extends BaseAdapter /*extends ArrayAdapter<ProductD
             convertView = layoutInflater.inflate(R.layout.product_row, null);
         }
 
-        //final ImageView imageView = (ImageView)convertView.findViewById(R.id.imageview_cover_art);
+        final ImageView imageView = (ImageView)convertView.findViewById(R.id.imageview_cover_art);
         final TextView nameTextView = (TextView)convertView.findViewById(R.id.textview_book_name);
         final TextView authorTextView = (TextView)convertView.findViewById(R.id.textview_book_author);
        // final ImageView imageViewFavorite = (ImageView)convertView.findViewById(R.id.imageview_favorite);
