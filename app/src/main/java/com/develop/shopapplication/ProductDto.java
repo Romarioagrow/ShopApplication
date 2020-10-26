@@ -27,8 +27,4 @@ public class ProductDto {
         return type;
     }
 
-
-    public String getAuthor() {
-        return "Name";
-    }
 }

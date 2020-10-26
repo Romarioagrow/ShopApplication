@@ -48,13 +48,11 @@ public class ProductsAdapter extends BaseAdapter /*extends ArrayAdapter<ProductD
         }
 
         final ImageView imageView = (ImageView)convertView.findViewById(R.id.imageview_cover_art);
-        final TextView nameTextView = (TextView)convertView.findViewById(R.id.textview_book_name);
-        final TextView authorTextView = (TextView)convertView.findViewById(R.id.textview_book_author);
-       // final ImageView imageViewFavorite = (ImageView)convertView.findViewById(R.id.imageview_favorite);
+        final TextView productNameView = (TextView)convertView.findViewById(R.id.textview_product_name);
+        final TextView productTypeView = (TextView)convertView.findViewById(R.id.textview_product_type);
 
-        //imageView.setImageResource(product.getImageResource());
-        nameTextView.setText(product.getName());
-        authorTextView.setText(product.getAuthor());
+        productNameView.setText(product.getName());
+        productTypeView.setText(product.getType());
 
         return convertView;
     }
