@@ -1,4 +1,4 @@
-package com.develop.shopapplication;
+package rio.develop.shopapplication;
 
 import android.content.Context;
 

@@ -1,4 +1,4 @@
-package com.develop.shopapplication.ui.main;
+package rio.develop.shopapplication.ui.main;
 
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;

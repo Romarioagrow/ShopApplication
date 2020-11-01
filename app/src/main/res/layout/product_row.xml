@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="401dp"
+            android:layout_height="104dp"
+            android:layout_gravity="start"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/imageview_cover_art"
+                android:layout_width="92dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                android:src="@drawable/tv1" />
+
+            <TextView
+                android:id="@+id/textview_product_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="12sp"
+                tools:text="Product Type" />
+
+            <TextView
+                android:id="@+id/textview_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingRight="8dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Product Name" />
+
+            <TextView
+                android:id="@+id/textview_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="12sp"
+                tools:text="Product Price" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:drawableStart="@android:drawable/ic_input_add" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

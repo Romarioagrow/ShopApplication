@@ -1,7 +1,8 @@
-package com.develop.shopapplication;
+package rio.develop.shopapplication.activities;
 
 import android.os.Bundle;
 
+import com.develop.shopapplication.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
@@ -9,15 +10,9 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.GridView;
-import android.widget.Toast;
 
-import com.develop.shopapplication.ui.main.SectionsPagerAdapter;
+import rio.develop.shopapplication.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
     //private GridView gridView;

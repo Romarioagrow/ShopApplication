@@ -1,4 +1,4 @@
-package com.develop.shopapplication.ui.main;
+package rio.develop.shopapplication.ui.main;
 
 import android.content.Context;
 
@@ -8,8 +8,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.develop.shopapplication.OrdersFragment;
-import com.develop.shopapplication.ProductsFragment;
+import rio.develop.shopapplication.activities.OrdersFragment;
+import rio.develop.shopapplication.activities.ProductsFragment;
 import com.develop.shopapplication.R;
 
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
